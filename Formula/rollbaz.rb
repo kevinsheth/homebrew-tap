@@ -5,20 +5,20 @@
 class Rollbaz < Formula
   desc "Fast Rollbar triage from your terminal"
   homepage "https://github.com/kevinsheth/rollbaz"
-  version "0.1.6"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kevinsheth/rollbaz/releases/download/v0.1.6/rollbaz_0.1.6_darwin_amd64.tar.gz"
-      sha256 "cf4b41b994cb01981a63d5efab2efcff8f930f48fb505b0aa303311367a33e0b"
+      url "https://github.com/kevinsheth/rollbaz/releases/download/v0.2.0/rollbaz_0.2.0_darwin_amd64.tar.gz"
+      sha256 "d900782dcaaccdfdd5d14c166d7a2adf887276de1be5aaba3974b047cdd95e40"
 
       def install
         bin.install "rollbaz"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kevinsheth/rollbaz/releases/download/v0.1.6/rollbaz_0.1.6_darwin_arm64.tar.gz"
-      sha256 "cfd56c4a57bcfb67a8152c7aa7bdddb252c9bb10eba6489394bd02d735c41062"
+      url "https://github.com/kevinsheth/rollbaz/releases/download/v0.2.0/rollbaz_0.2.0_darwin_arm64.tar.gz"
+      sha256 "2ca27581aed18f7c33da9cdc5887150663e69515b7e6f1a69253be20777179d9"
 
       def install
         bin.install "rollbaz"
@@ -28,15 +28,15 @@ class Rollbaz < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kevinsheth/rollbaz/releases/download/v0.1.6/rollbaz_0.1.6_linux_amd64.tar.gz"
-      sha256 "2c49943312181d5f7e16e31c50405bd402319e6c66ed7aa8a4ca6f4b724381c7"
+      url "https://github.com/kevinsheth/rollbaz/releases/download/v0.2.0/rollbaz_0.2.0_linux_amd64.tar.gz"
+      sha256 "9635270eb3a6c8ee895093ebd844835141d0969b5cb256f982aae91d79c1644f"
       def install
         bin.install "rollbaz"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kevinsheth/rollbaz/releases/download/v0.1.6/rollbaz_0.1.6_linux_arm64.tar.gz"
-      sha256 "a0fa6103dfdad5610c96ef95068a8de2923b2dc58344e7ac16452216c0cfab92"
+      url "https://github.com/kevinsheth/rollbaz/releases/download/v0.2.0/rollbaz_0.2.0_linux_arm64.tar.gz"
+      sha256 "fef1f208ed0589b8241a443259526991312fd9fe7a5be65ef06d7c9f5c05af7e"
       def install
         bin.install "rollbaz"
       end
